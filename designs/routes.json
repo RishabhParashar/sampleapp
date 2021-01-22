@@ -2,7 +2,7 @@
     "routes": [
         {
             "path": "home",
-            "component": "firstpageComponent",
+            "component": "tablepageComponent",
             "redirectTo": ""
         },
         {

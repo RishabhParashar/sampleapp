@@ -1,0 +1,140 @@
+[
+    {
+        "id": "SSD_SERVICE_ID_sd_2wifeYSzN2CYh4zr",
+        "type": "tab",
+        "createdDate": "2021-01-21T07:06:14.417Z",
+        "relativeParentPath": "",
+        "label": "clientservice",
+        "disabled": false,
+        "info": "",
+        "generateNext": true,
+        "serviceName": "clientservice"
+    },
+    {
+        "id": "sd_bVuz8sVwUWeJb7sY",
+        "type": "Start",
+        "z": "SSD_SERVICE_ID_sd_2wifeYSzN2CYh4zr",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "startnode",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "inputstring",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "startnode",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 220,
+        "y": 120,
+        "wires": [
+            [
+                "sd_nzvKGS7Sdm7BIM8W"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "clientservice"
+    },
+    {
+        "id": "sd_nzvKGS7Sdm7BIM8W",
+        "type": "HttpRequest",
+        "z": "SSD_SERVICE_ID_sd_2wifeYSzN2CYh4zr",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlValue": "http://localhost:8081/get-countries",
+        "urlMappingObj": {},
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "useAuthTypeMappingObj": {},
+        "useAuthUsername": "",
+        "useAuthUsernameMappingObj": "",
+        "useAuthPassword": "",
+        "useAuthPasswordMappingObj": "",
+        "useAuthToken": "",
+        "useAuthTokenMappingObj": "",
+        "tls": "",
+        "followRedirect": true,
+        "paytoqs": false,
+        "useAuthentication": false,
+        "rejectUnauthorized": false,
+        "proxy": "",
+        "useProxy": false,
+        "usetls": false,
+        "cookiesMapObj": {},
+        "cookiesList": {},
+        "switchStates": {
+            "cookies": "Map"
+        },
+        "editableListData": {},
+        "timeout": {
+            "type": "num",
+            "value": ""
+        },
+        "functionName": "sd_nzvKGS7Sdm7BIM8W",
+        "category": "HTTP",
+        "__n_excludedFromValidation__": {},
+        "x": 405,
+        "y": 120,
+        "wires": [
+            [
+                "sd_B1QRcMYSt9EU0BHG"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_B1QRcMYSt9EU0BHG",
+        "type": "ServerLog",
+        "z": "SSD_SERVICE_ID_sd_2wifeYSzN2CYh4zr",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "bh",
+        "logLevel": "info",
+        "functionName": "sd_B1QRcMYSt9EU0BHG",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 600,
+        "y": 120,
+        "wires": [],
+        "generateNext": false,
+        "generated": true
+    }
+]

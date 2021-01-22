@@ -1,1 +1,53 @@
-<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button color="primary" [disabled]="false">Submit</button></div>
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <form>
+    <div fxLayout="row wrap" style="left-padding:100px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" style="padding-left:50px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" class="forminput" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput placeholder="First Name" [required]="false">
+
+          </mat-form-field>
+        </div>
+        <div fxLayout="row wrap" class="forminput" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+          <div>
+            Gender :</div>
+          <mat-radio-button [required]="false">Male</mat-radio-button>
+          <mat-radio-button [required]="false">Female</mat-radio-button>
+        </div>
+        <div fxLayout="row wrap" class="forminput" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput placeholder="Contact Number" [required]="false">
+
+          </mat-form-field>
+        </div>
+      </div>
+      <div fxLayout="column wrap" style="padding-left:50px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" class="forminput" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput placeholder="Last Name" [required]="false">
+
+          </mat-form-field>
+        </div>
+        <div fxLayout="row wrap" class="forminput" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <mat-form-field [appearance]="&apos;legacy&apos;">
+            <input matInput placeholder="Date Of Birth" [matDatepicker]="picker" [required]="false" [disabled]="false">
+            <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
+            <mat-datepicker #picker [disabled]="false"></mat-datepicker>
+
+          </mat-form-field>
+        </div>
+        <div fxLayout="row wrap" class="forminput" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+            <mat-select placeholder="Hobbies" [required]="false">
+              <mat-option [value]="&apos;sports&apos;" disabled="false">Sports</mat-option>
+              <mat-option [value]="&apos;cook&apos;" disabled="false">Cooking</mat-option>
+              <mat-option [value]="&apos;travel&apos;" disabled="false">Travel</mat-option>
+            </mat-select>
+
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row wrap" style="padding-left:50px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button [disabled]="false">Submit</button></div>
+  </form>
+</div>

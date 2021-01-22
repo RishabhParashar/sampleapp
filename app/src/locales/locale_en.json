@@ -2,5 +2,7 @@
     "localeId": "en",
     "localeName": "English",
     "isDefaultLanguage": true,
-    "properties": {}
+    "properties": {
+        "personaldetails": "Personal Details"
+    }
 }

@@ -1,0 +1,14 @@
+{
+    "appPageId": "322f1472-9e9c-4146-6f5a-79765cd6dd3d",
+    "appPageName": "simpleform",
+    "componentName": "simpleformComponent",
+    "selectorName": "bh-simpleform",
+    "htmlFileName": "simpleform.template.html",
+    "tsFileName": "simpleform.component.ts",
+    "createDate": "2021-01-19T12:22:09.502Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

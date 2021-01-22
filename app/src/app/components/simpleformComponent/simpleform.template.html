@@ -1,0 +1,23 @@
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <form [formGroup]="simpleform">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="row wrap" fxLayoutGap="30px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div>
+          First Name</div>
+        <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput placeholder="Enter First Name" [required]="false" formControlName="firstname">
+          <mat-error align="start" *ngIf="simpleform.controls.firstname.errors?.required">Please Enter a valid first name</mat-error>
+        </mat-form-field>
+      </div>
+      <div fxLayout="row wrap" fxLayoutGap="25px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div>
+          Last Name</div>
+        <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput placeholder="Enter Last Name" [required]="false" formControlName="lastname">
+          <mat-error align="start" *ngIf="simpleform.controls.lastname.errors?.required">Please Enter valid last name</mat-error>
+        </mat-form-field>
+      </div>
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button (click)="submitform()">Submit</button></div>
+    </div>
+  </form>
+</div>

@@ -16,6 +16,12 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-tablepageComponent
+import { tablepageComponent } from '../components/tablepageComponent/tablepage.component';
+//CORE_REFERENCE_IMPORT-samplepageComponent
+import { samplepageComponent } from '../components/samplepageComponent/samplepage.component';
+//CORE_REFERENCE_IMPORT-simpleformComponent
+import { simpleformComponent } from '../components/simpleformComponent/simpleform.component';
 //CORE_REFERENCE_IMPORT-firstpageComponent
 import { firstpageComponent } from '../components/firstpageComponent/firstpage.component';
 
@@ -46,6 +52,12 @@ export const appDeclarations = [
   NMapComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-tablepageComponent
+tablepageComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-samplepageComponent
+samplepageComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-simpleformComponent
+simpleformComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-firstpageComponent
 firstpageComponent,
 
@@ -74,5 +86,5 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'home', component: firstpageComponent},{path: '', redirectTo: 'home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'home', component: tablepageComponent},{path: '', redirectTo: 'home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END
